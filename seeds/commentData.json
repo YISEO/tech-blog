@@ -1,0 +1,17 @@
+[
+    {
+        "comment_text": "The MVC pattern helps you break up the frontend and backend code into separate components.",
+        "user_id": 1,
+        "post_id": 1
+    },
+    {
+        "comment_text": "Actually, I didn't know that",
+        "user_id": 2,
+        "post_id": 2
+    },
+    {
+        "comment_text": "I just learned about this in my class!",
+        "user_id": 3,
+        "post_id": 3
+    }
+]
