@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* common style */
+:root {
+    --primary: #d9ead3;
+    --dark: #231010;
+	--light-dark: #a7a7a7;
+    --border-radius: 0.3rem;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+	box-sizing: border-box;
+	background-color: var(--primary);
+    color: var(--dark);
+	letter-spacing: -0.5px;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.form-container {
+	border: 2px solid var(--dark);
+}
+
+.form-container h2 {
+	padding: 0.8rem 1.2rem;
+	background-color: var(--dark);
+	color: var(--light-dark);
+}
+
+form {
+	padding: 0.8rem 1.2rem;
+}
+
+form .form-group {
+	margin-bottom: 1.2rem;
+    display: block;
+    width: 100%;
+}
+
+form .form-input,
+form .form-textarea {
+	box-sizing: border-box;
+    display: block;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+form label,
+form .form-label {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+form .form-input {
+	margin-top: 0.5rem;
+    padding: 0.75rem;
+    color: var(--dark);
+    background-color: #ffffff;
+    font-size: 1.2rem;
+	width: 100%;
+    border: 1px solid var(--dark);
+    border-radius: 0.3rem;
+}
+
+.form-button {
+	margin-top: 1.5rem;
+	width: 100%;
+}
+
+.btn {
+    text-align: center;
+    display: block;
+    padding: 0.8rem 1rem;
+	width: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    border: 1px solid transparent;
+    outline: none;
+    color: var(--light-dark);
+    background-color: var(--dark);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #cecece;
+}
+
+/* flex content */
+.display-flex {
+    display: flex !important;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+    flex-wrap: nowrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+/* header */
+.header {
+	padding: 2rem 1.5rem;
+	background-color: var(--dark);
+}
+
+.navigation {
+    width: 100%;
+    background-color: var(--dark);
+}
+
+.navigation a {
+	padding-right: 1.5rem;
+    color: var(--primary);
+	font-size: 1.2rem;
+}
+
+.navigation a:hover {
+	text-decoration: underline;
+}
+
+.navigation a:last-child {
+	padding-right: 0;
+}
+
+.app-title {
+	font-size: 2rem;
+	background-color: var(--primary);
+	color: var(--dark);
+	padding: 5px 15px;
+	margin-top: 1rem;
+	display: inline-block;
+	border-radius: var(--border-radius);
+	box-shadow: 4px 4px 3px 1px var(--light-dark);
+}
+
+/* main - post card */
+.container {
+	max-width: 1000px;
+	padding: 1.2rem 1.6rem;
+}
+
+.card {
+    border: 2px solid var(--dark);
+    margin-bottom: 1rem;
+}
+
+.card .card-header {
+    padding: 0.6rem 1rem;
+    background-color: var(--dark);
+    color: var(--light-dark);
+}
+
+.card-header h2 {
+	font-size: 1.4rem;
+}
+
+.card-header p {
+	text-align: right;
+	font-size: 14px;
+}
+
+.card .card-body {
+    padding: 1rem 1.4rem;
+}
+
+
+/* media query */
+@media screen and (max-width: 768px) {
+	.card-header {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}

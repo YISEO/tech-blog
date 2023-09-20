@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The tech blog</title>
-    <link rel="stylesheet" href="/css/jass.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <div class="flex-column justify-space-around">
-        <header class="display-flex justify-space-between align-center p-2">
-            <nav>
+    <div class="main-wrap">
+        <header class="display-flex flex-row align-center header">
+            <nav class="navigation">
                 <a href="/">Home</a>
                 <a href="/dashboard">Dashboard</a>
-                {{#if logged_in}}
+                {{#if loggedIn}}
                 <a href="/" id="logout">logout</a>
                 {{else}}
                 <a href="/login">login</a>
