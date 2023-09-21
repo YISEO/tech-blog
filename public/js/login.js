@@ -15,12 +15,10 @@ async function loginFormHandler(event) {
                 "Content-Type": "application/json"
             },
         })
-        .then(() => { document.location.replace("/dashboard"); })
+        .then(() => { document.location.replace("/"); })
         .catch(err => console.log(err));
 
     }
 }
 
-document
-    .querySelector(".login-form")
-    .addEventListener("submit", loginFormHandler);
+document.querySelector(".login-form").addEventListener("submit", loginFormHandler);
