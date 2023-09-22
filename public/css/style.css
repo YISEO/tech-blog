@@ -23,13 +23,16 @@ h1,
 h2,
 h3
 p {
-	margin: 0;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-	display: inline-block;
+a, 
+button {
+    border: 0;
 	text-decoration: none;
-	color: inherit;
+    cursor: pointer;
+    color: inherit;
 }
 
 .form-container {
@@ -89,23 +92,30 @@ form .form-input {
 	width: 100%;
 }
 
-.btn {
-    text-align: center;
-    display: block;
+.button-wrap {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.button-wrap * {
+    box-sizing: border-box;
     padding: 0.8rem 1rem;
-	width: 100%;
-    margin: 0;
-    font-size: 1.2rem;
+    display: block;
+    width: 100%;
     border-radius: 0.3rem;
-    border: 1px solid transparent;
-    outline: none;
+    text-align: center;
+    font-size: 1.2rem;
     color: var(--light-dark);
     background-color: var(--dark);
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.btn:hover {
-    background-color: #cecece;
+.button-wrap:hover * {
+    background-color: var(--light-dark);
+}
+
+.button-wrap:hover * {
+    color: var(--dark);
 }
 
 /* flex content */
@@ -232,6 +242,9 @@ form .form-input {
     margin-bottom: 1rem;
 }
 
+.card h3 {
+    margin: 0;
+}
 .card .card-header {
     padding: 0.6rem 1rem;
     background-color: var(--dark);
